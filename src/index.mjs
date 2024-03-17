@@ -1,5 +1,5 @@
-function onlyLettersAndNumbers(str) {
-	return /^[A-Za-z0-9]*$/.test(str)
+function validJavaScriptIdentifier(str) {
+	return /^[A-Za-z0-9$_]*$/.test(str)
 }
 
 function startsWithDigit(str) {
@@ -11,7 +11,7 @@ function startsWithDigit(str) {
 }
 
 function escapeKey(key) {
-	if (!onlyLettersAndNumbers(key) || startsWithDigit(key)) {
+	if (!validJavaScriptIdentifier(key) || startsWithDigit(key)) {
 		return JSON.stringify(key)
 	}
 
