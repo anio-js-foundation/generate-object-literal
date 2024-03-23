@@ -74,7 +74,7 @@ function objectLiteral(entries, options) {
 		const {type, value} = entries[i]
 
 		if (type === "comment") {
-			lines.push(`/* ${value} */`)
+			lines.push(`// ${value}`)
 		} else {
 			let comma = ",", key_padding = ""
 
