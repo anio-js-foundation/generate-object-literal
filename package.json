@@ -1,6 +1,6 @@
 {
   "name": "@anio-js-foundation/generate-object-literal",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Create an object literal string.",
   "main": "./dist/package.mjs",
   "author": "Anio Software <info@anio.software>",
